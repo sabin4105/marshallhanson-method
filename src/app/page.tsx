@@ -1,3 +1,4 @@
+import MHMFeatures from "@/components/MhmFeatures";
 import Image from "next/image";
 
 export default function Home() {
@@ -106,7 +107,8 @@ export default function Home() {
       </section>
 
       {/* ADDITIONAL SECTIONS GO HERE */}
-      <div className="h-screen bg-white" />
+      {/* <div className="h-screen bg-white" /> */}
+      <MHMFeatures />
     </main>
   );
 }

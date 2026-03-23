@@ -11,7 +11,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 transition-colors duration-500">
       <div className="h-24"></div> {/* Navbar Spacer */}
-      <div className="max-w-[1400px] mx-auto px-6 py-12 lg:py-24">
+      <div className="max-w-[1400px] mx-auto py-8 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-20 items-start">
           {/* LEFT COLUMN: Office Info */}
           <div data-aos="fade-right">
@@ -28,7 +28,7 @@ export default function ContactPage() {
                 <h4 className="text-[11px] uppercase tracking-widest font-bold text-stone-400 mb-4">
                   Location
                 </h4>
-                <p className="text-xl font-light leading-relaxed">
+                <p className="text-sm sm:text-xl font-light leading-relaxed">
                   723 E 12200 S Suite 101 A<br />
                   Draper, Utah 84020
                 </p>
@@ -40,11 +40,11 @@ export default function ContactPage() {
                 </h4>
                 <a
                   href="tel:4808817022"
-                  className="text-2xl font-serif italic hover:text-blue-600 transition-colors"
+                  className="text-lg sm:text-xl font-serif italic hover:text-blue-600 transition-colors"
                 >
                   (480) 881-7022
                 </a>
-                <p className="mt-2 text-stone-500 font-light">
+                <p className="mt-2 text-sm sm:text-lg italic text-stone-500 font-light">
                   marshallhansonmethod@gmail.com
                 </p>
               </div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
 
           {/* RIGHT COLUMN: The Form */}
           <div
-            className="bg-white dark:bg-stone-900 p-8 lg:p-12 rounded-[3rem] shadow-xl shadow-stone-200/50 dark:shadow-none border border-stone-100 dark:border-stone-800"
+            className="bg-white dark:bg-stone-900 sm:p-8 p-4 lg:p-12 sm:rounded-[3rem] rounded-3xl shadow-xl shadow-stone-200/50 dark:shadow-none border border-stone-100 dark:border-stone-800"
             data-aos="fade-left"
           >
             <form className="space-y-8">

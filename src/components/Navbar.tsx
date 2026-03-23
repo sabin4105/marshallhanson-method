@@ -90,7 +90,7 @@ export default function Navbar() {
             : "opacity-0 -translate-y-full pointer-events-none"
         }`}
       >
-        <div className="flex flex-col bg-white dark:bg-stone-800 px-3 text-sm uppercase tracking-[0.2em] font-bold text-black dark:text-white">
+        <div className="flex flex-col bg-white dark:bg-stone-800 px-3 text-sm uppercase tracking-[0.2em] text-black dark:text-white">
           {navLinks.map((link) => (
             <Link
               key={link.name}
