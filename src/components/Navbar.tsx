@@ -15,21 +15,27 @@ export default function Navbar() {
   ];
 
   // 🔒 Lock scroll when menu open
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "auto";
-  }, [isOpen]);
+useEffect(() => {
+  if (isOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+
+  return () => {
+    document.body.style.overflow = "";
+  };
+}, [isOpen]);
 
   return (
-    <nav className="fixed top-0 w-screen z-[100] bg-[#FAF9F6]/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-black/5 dark:border-white/10 transition-colors">
-      <div className="max-w-[1400px] mx-auto px-6 h-20 flex justify-between items-center relative">
-        
+    <nav className="fixed top-0 inset-x-0 z-[100] bg-[#FAF9F6]/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-black/5 dark:border-white/10 transition-colors">
+      <div className="mx-auto px-6 h-20 flex justify-between items-center">
         {/* Logo */}
         <Link
           href="/"
           className="text-md md:text-xl font-semibold tracking-tighter uppercase text-black dark:text-white z-50"
         >
-          Marshall Hanson{" "}
-          <br />
+          Marshall Hanson <br />
           <span className="font-light text-gray-400 text-sm dark:text-zinc-500">
             Dentistry
           </span>
@@ -84,7 +90,7 @@ export default function Navbar() {
 
       {/* ✅ Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0 pt-20 dark:bg-zinc-950 transition-all duration-500 ease-in-out ${
+        className={`lg:hidden absolute inset-0 pt-20 dark:bg-zinc-950 transition-all duration-500 ease-in-out ${
           isOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-full pointer-events-none"

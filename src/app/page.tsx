@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen dark:bg-stone-950">
+    <main className="relative dark:bg-stone-950">
       {/* CORE HERO SECTION */}
       <section className="relative min-h-screen px-2 flex items-center pt-20">
         <div className="max-w-[1400px] mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">

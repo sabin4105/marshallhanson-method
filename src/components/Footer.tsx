@@ -251,6 +251,17 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div
+        className="mt-6 rounded-lg border px-4 py-3 text-sm
+            bg-gray-100  border-gray-300 text-red-600"
+      >
+        <span className="font-bold">
+          PROTOTYPE DISCLAIMER:
+        </span>
+        This is a live design prototype intended to demonstrate layout and
+        performance. All images and case studies are currently placeholders and
+        will be updated with your verified portfolio upon project approval.
+      </div>
     </footer>
   );
 }

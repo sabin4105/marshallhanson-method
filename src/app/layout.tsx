@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="antialiased selection:bg-stone-200 dark:bg-stone-950">
+      <body className="antialiased overflow-x-clip selection:bg-stone-200 dark:bg-stone-950">
         <AOSInit />
         <Navbar />
         <div className="px-2 sm:px-0">{children}</div>
