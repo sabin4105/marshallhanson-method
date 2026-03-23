@@ -115,10 +115,11 @@ export default function ContactPage() {
         </div>
       </div>
       {/* Full-width Map Placeholder */}
-      <section className="mt-20 h-[50vh] bg-stone-200 dark:bg-stone-800 relative grayscale hover:grayscale-0 transition-all duration-1000">
+      <section className="mt-20 h-[50vh] bg-stone-200 dark:bg-stone-800 relative transition-all duration-1000">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.423405763566!2d-111.8719541!3d40.5255938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528399589a175b%3A0xc3f8e5b4f6b2b5!2s723%20E%2012200%20S%20%23101a%2C%20Draper%2C%20UT%2084020!5e0!3m2!1sen!2sus!4v1710000000000"
-          className="w-full h-full border-0"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1603.1448703955007!2d-111.8710713!3d40.5294386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752875d895a1f4d%3A0x4af6ce03935ed7cb!2sMARSHALL%20HANSON%20METHOD!5e1!3m2!1sen!2sin!4v1774307321324!5m2!1sen!2sin"
+          className="w-full h-[400px] border-0"
+          referrerPolicy="no-referrer-when-downgrade"
           loading="lazy"
         ></iframe>
       </section>

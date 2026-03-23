@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   description: "Crafted care, long after your visit.",
 };
 
-
 export default function RootLayout({
   children,
 }: {
@@ -27,9 +26,11 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="antialiased overflow-x-clip selection:bg-stone-200 dark:bg-stone-950">
         <AOSInit />
-        <Navbar />
-        <div className="px-2 sm:px-0">{children}</div>
-        <Footer />
+        <div className="px-2">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

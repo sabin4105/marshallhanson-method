@@ -25,8 +25,8 @@ const MHMFeatures = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-white dark:bg-stone-950 w-screen transition-colors duration-500">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-24 px-6 bg-white dark:bg-stone-950 transition-colors duration-500">
+      <div className="mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((item) => (
             <div

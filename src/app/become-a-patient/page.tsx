@@ -14,11 +14,11 @@ export default function BecomeAPatient() {
   ];
 
   return (
-    <main className="relative min-h-screen dark:bg-stone-950">
+    <main className="relative dark:bg-stone-950">
       {/* Spacer for Fixed Navbar */}
       <div className="h-20"></div>
 
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-[1400px] mx-auto">
         {/* Header */}
         <header className="mb-18" data-aos="fade-up">
           <h1 className="font-serif italic text-stone-900 dark:text-stone-100 text-[clamp(2.2rem,5vw,4.5rem)]">

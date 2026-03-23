@@ -28,7 +28,7 @@ useEffect(() => {
 }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 inset-x-0 z-[100] bg-[#FAF9F6]/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-black/5 dark:border-white/10 transition-colors">
+    <nav className="h-20 z-[100] fixed  w-full bg-[#FAF9F6]/80 dark:bg-zinc-950/80 backdrop-blur-md sm:border-b border-black/5 dark:border-white/10 transition-colors">
       <div className="mx-auto px-6 h-20 flex justify-between items-center">
         {/* Logo */}
         <Link
@@ -90,7 +90,7 @@ useEffect(() => {
 
       {/* ✅ Mobile Menu */}
       <div
-        className={`lg:hidden absolute inset-0 pt-20 dark:bg-zinc-950 transition-all duration-500 ease-in-out ${
+        className={`lg:hidden dark:bg-zinc-950 transition-all duration-500 ease-in-out ${
           isOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-full pointer-events-none"
