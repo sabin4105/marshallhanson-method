@@ -67,7 +67,7 @@ export default function ContactPage() {
 
           {/* RIGHT COLUMN: The Form */}
           <div
-            className="bg-white dark:bg-stone-900 sm:p-8 p-4 lg:p-12 sm:rounded-[3rem] rounded-3xl shadow-xl shadow-stone-200/50 dark:shadow-none border border-stone-100 dark:border-stone-800"
+            className="bg-white overflow-clip dark:bg-stone-900 sm:p-8 p-4 lg:p-12 sm:rounded-[3rem] rounded-3xl shadow-xl shadow-stone-200/50 dark:shadow-none border border-stone-100 dark:border-stone-800"
             data-aos="fade-left"
           >
             <form className="space-y-8">

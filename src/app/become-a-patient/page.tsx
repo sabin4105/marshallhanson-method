@@ -18,7 +18,7 @@ export default function BecomeAPatient() {
       {/* Spacer for Fixed Navbar */}
       <div className="h-20"></div>
 
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1400px] w-full mx-auto">
         {/* Header */}
         <header className="mb-18" data-aos="fade-up">
           <h1 className="font-serif italic text-stone-900 dark:text-stone-100 text-[clamp(2.2rem,5vw,4.5rem)]">
@@ -31,7 +31,7 @@ export default function BecomeAPatient() {
         </header>
 
         {/* 3 Steps Section */}
-        <section className="relative max-w-7xl mx-auto mb-5 sm:mb-0 px-6 sm:px-8 lg:px-12 lg:py-18">
+        <section className="relative mx-auto mb-5 sm:mb-0 px-6 sm:px-8 lg:px-12 lg:py-18">
           <div className="grid md:grid-cols-3 gap-14 lg:gap-20">
             {/* Step 1 */}
             <div

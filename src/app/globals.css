@@ -9,6 +9,10 @@
   --color-brand-gold: #c5a059;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .dark {
   --color-brand-bg: #0c0a09; /* stone-950 */
   --color-brand-text: #FAF9F6;
